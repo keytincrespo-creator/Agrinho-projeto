@@ -1,0 +1,24 @@
+// Exibe a dica dos cards principais
+function mostrarDica(mensagem) {
+    alert(mensagem);
+}
+
+// Lógica do Quiz
+function verificarResposta(botaoClicado, eCorreta) {
+    // Encontra todos os botões da mesma pergunta para desabilitá-los após o clique
+    const containerPergunta = botaoClicado.parentElement;
+    const botoes = containerPergunta.querySelectorAll('.btn-resposta');
+    
+    botoes.forEach(btn => {
+        btn.disabled = true; // Impede que o usuário mude a resposta
+    });
+
+    // Pinta o botão de verde ou vermelho baseado no acerto
+    if (eCorreta) {
+        botaoClicado.classList.add('correta');
+    } else {
+        botaoClicado.classList.add('errada');
+    }
+}
+
+console.log("Site AgroSustentável com Quiz ativo!");
