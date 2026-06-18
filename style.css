@@ -1,0 +1,58 @@
+/* Estilos do Quiz */
+#quiz-section {
+    background-color: #fdf4ff;
+    border-top: 2px dashed #f3e8ff;
+}
+
+.sub-quiz {
+    margin-bottom: 30px;
+    color: #701a75;
+}
+
+.pergunta {
+    background: white;
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(236, 72, 153, 0.1);
+    text-align: left;
+}
+
+.pergunta p {
+    margin-bottom: 15px;
+    color: #4a3b4e;
+}
+
+.btn-resposta {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #f5d0fe; /* Lilás claro */
+    color: #701a75;
+    border: 1px solid #e9d5ff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-resposta:hover {
+    background-color: #f0abfc; /* Rosa/Lilás mais intenso */
+}
+
+/* Classes que o JavaScript vai usar para feedback visual */
+.correta {
+    background-color: #bbf7d0 !important; /* Verde claro */
+    color: #166534 !important;
+    border-color: #86efac;
+}
+
+.errada {
+    background-color: #fecaca !important; /* Vermelho claro */
+    color: #991b1b !important;
+    border-color: #fca5a5;
+}
