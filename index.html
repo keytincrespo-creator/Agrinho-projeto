@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSustentável | Futuro Verde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Agro<span>Sustentável</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#quiz-section">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>O Futuro da Agricultura é Consciente</h2>
+            <p>Unindo a delicadeza da natureza com a força da tecnologia sustentável para cultivar um amanhã melhor.</p>
+            <a href="#quiz-section" class="btn">Testar meus conhecimentos</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="container">
+        <h2>Sobre o AgroSustentável</h2>
+        <p>A agricultura sustentável respeita o ecossistema, garante a saúde do solo e preserva os recursos hídricos. Nosso objetivo é mostrar que a produção de alimentos pode caminhar lado a lado com a conservação ambiental.</p>
+    </section>
+
+    <section id="praticas" class="container card-section">
+        <div class="card" onclick="mostrarDica('Dica 1: A rotação evita o desgaste de nutrientes específicos do solo!')">
+            <h3>Rotação de Culturas</h3>
+            <p>Alternar as espécies plantadas ajuda a manter o solo fértil e reduz pragas naturalmente.</p>
+        </div>
+        <div class="card" onclick="mostrarDica('Dica 2: Captar água da chuva reduz custos e preserva lençóis freáticos!')">
+            <h3>Uso Consciente da Água</h3>
+            <p>Sistemas de irrigação por gotejamento e captação de água da chuva evitam o desperdício.</p>
+        </div>
+        <div class="card" onclick="mostrarDica('Dica 3: Insetos benéficos, como Joaninhas, são ótimos defensores naturais!')">
+            <h3>Adubação Orgânica</h3>
+            <p>Substituir defensivos químicos por compostagem e controle biológico protege a biodiversidade.</p>
+        </div>
+    </section>
+
+    <section id="quiz-section" class="container">
+        <h2>Quiz AgroSustentável</h2>
+        <p class="sub-quiz">Responda às perguntas abaixo para ver se você entende de agroecologia!</p>
+        
+        <div id="quiz-container">
+            <div class="pergunta">
+                <p><strong>1. Qual dessas práticas NÃO é considerada sustentável?</strong></p>
+                <button class="btn-resposta" onclick="verificarResposta(this, false)">Rotação de culturas</button>
+                <button class="btn-resposta" onclick="verificarResposta(this, true)">Uso massivo de agrotóxicos</button>
+                <button class="btn-resposta" onclick="verificarResposta(this, false)">Compostagem orgânica</button>
+            </div>
+
+            <div class="pergunta">
+                <p><strong>2. Qual o principal objetivo do sistema de gotejamento na irrigação?</strong></p>
+                <button class="btn-resposta" onclick="verificarResposta(this, true)">Economizar água direcionando-a à raiz</button>
+                <button class="btn-resposta" onclick="verificarResposta(this, false)">Inundar a plantação rapidamente</button>
+                <button class="btn-resposta" onclick="verificarResposta(this, false)">Modificar a cor das folhas</button>
+            </div>
+        </div>
+        <div id="resultado-quiz"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroSustentável. Cultivando ideias, colhendo futuro.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
